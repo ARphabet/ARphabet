@@ -852,11 +852,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 2
   windowsGamepadBackendHint: 0
-  cloudProjectId: afdc84d7-616a-43cb-a4fe-3c8c1645dfa9
+  cloudProjectId: 0abede3b-96e8-479c-9409-2897a7aabf5d
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
   projectName: ARphabet
-  organizationId: unity_504c0d05cca5b94e71f5
+  organizationId: ispironi
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

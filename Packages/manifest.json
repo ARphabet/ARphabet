@@ -1,11 +1,15 @@
 {
-    "dependencies": {
+  "dependencies": {
     "com.ptc.vuforia.engine": "file:com.ptc.vuforia.engine-11.4.4",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.collab-proxy": "2.11.2",
     "com.unity.feature.development": "1.0.2",
     "com.unity.inputsystem": "1.14.2",
     "com.unity.multiplayer.center": "1.0.0",
+    "com.unity.multiplayer.playmode": "1.6.3",
+    "com.unity.netcode.gameobjects": "2.7.0",
+    "com.unity.services.lobby": "1.2.2",
+    "com.unity.services.relay": "1.0.5",
     "com.unity.timeline": "1.8.9",
     "com.unity.ugui": "2.0.0",
     "com.unity.visualscripting": "1.9.7",
