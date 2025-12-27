@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "220279037432",
+    "project_id": "arphabet-fa9fe",
+    "storage_bucket": "arphabet-fa9fe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:220279037432:android:0330d2b0a5fcb08c370a0d",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.ARphabet"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE_AKKfmu7Ub66iM10TCXj7fVfinsD9Is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
