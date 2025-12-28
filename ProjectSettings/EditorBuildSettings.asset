@@ -13,7 +13,7 @@ EditorBuildSettings:
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/LobiSahne.unity
-    guid: aabf96a85626fbd4b81e213dba3aadf5
+    guid: 1c7be3bfc18d42847bf687ea9888fb58
   - enabled: 1
     path: Assets/Scenes/MultiplayerGame.unity
     guid: 57de63d950b2ffb4faf639cfe5b1a112
