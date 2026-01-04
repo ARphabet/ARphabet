@@ -2,7 +2,7 @@ using Photon.Pun;
 using Photon.Realtime;
 using System.Collections.Generic;
 using TMPro;
-using UnityEngine; // Unity'nin kütüphanesi
+using UnityEngine;
 using UnityEngine.UI;
 
 public class NetworkManager : MonoBehaviourPunCallbacks
@@ -13,86 +13,104 @@ public class NetworkManager : MonoBehaviourPunCallbacks
     public Text statusText;
 
     [Header("--- Oda Listesi Ayarlarý ---")]
-    public Transform contentObject;
-    public GameObject roomItemPrefab;
-    public GameObject lobbyPanel; // Lobi paneli (Odaya girince kapanacak)
+    public Transform contentObject; // Inspector'da buranýn dolu olduðundan emin ol
+    public GameObject roomItemPrefab; // Inspector'da buranýn dolu olduðundan emin ol
+    public GameObject lobbyPanel;
 
     void Start()
     {
-        // ---> ÝÞTE EKSÝK OLAN SÝHÝRLÝ SATIR BU <---
-        // Bu true olmazsa, LoadLevel yapýnca sadece host gider, diðerleri kalýr.
         PhotonNetwork.AutomaticallySyncScene = true;
-
         PhotonNetwork.ConnectUsingSettings();
-        statusText.text = "Sunucuya baðlanýlýyor...";
 
-        // Baþlangýçta butonu kapatalým, baðlanýnca açarýz
+        if (statusText != null) statusText.text = "Sunucuya baðlanýlýyor...";
         if (createButton != null) createButton.interactable = false;
     }
 
     public override void OnConnectedToMaster()
     {
-        UnityEngine.Debug.Log("Server'a gelindi, Lobiye giriliyor..."); // DÜZELTÝLDÝ
+        Debug.Log("Server'a gelindi, Lobiye giriliyor...");
         PhotonNetwork.JoinLobby();
-        statusText.text = "Lobiye giriliyor...";
+        if (statusText != null) statusText.text = "Lobiye giriliyor...";
     }
 
     public override void OnJoinedLobby()
     {
-        UnityEngine.Debug.Log("Lobiye Girildi."); // DÜZELTÝLDÝ
-        statusText.text = "Lobiye Hoþgeldin!";
+        Debug.Log("Lobiye Girildi.");
+        if (statusText != null) statusText.text = "Lobiye Hoþgeldin!";
         if (createButton != null) createButton.interactable = true;
     }
 
-    // --- BUTONA BASINCA BU ÇALIÞACAK ---
     public void CreateRoom()
     {
         string odaAdi = roomNameInput.text;
 
-        // Ýsim boþsa rastgele sayý ver
         if (string.IsNullOrEmpty(odaAdi))
         {
-            // BURAYI DÜZELTTÝM: UnityEngine.Random kullandýk
             odaAdi = "Oda " + UnityEngine.Random.Range(1000, 9999);
         }
 
         RoomOptions options = new RoomOptions { MaxPlayers = 2, IsOpen = true, IsVisible = true };
         PhotonNetwork.CreateRoom(odaAdi, options);
 
-        statusText.text = "Oda kuruluyor: " + odaAdi;
-        UnityEngine.Debug.Log(odaAdi + " kuruluyor..."); // DÜZELTÝLDÝ
+        if (statusText != null) statusText.text = "Oda kuruluyor: " + odaAdi;
+        Debug.Log(odaAdi + " kuruluyor...");
     }
 
     public override void OnJoinedRoom()
     {
-        statusText.text = "Odaya Girildi: " + PhotonNetwork.CurrentRoom.Name;
-
-        // Odaya girince Lobi ekranýný kapat ki diðer ekran (RoomManager) gözüksün
-        if (lobbyPanel != null)
-        {
-            lobbyPanel.SetActive(false);
-        }
+        if (statusText != null) statusText.text = "Odaya Girildi: " + PhotonNetwork.CurrentRoom.Name;
+        if (lobbyPanel != null) lobbyPanel.SetActive(false);
     }
 
+    // --- DÜZENLENEN KISIM (HATA BURADAYDI) ---
     public override void OnRoomListUpdate(List<RoomInfo> roomList)
     {
+        // 1. KONTROL: Liste içeriði veya parent obje boþ mu?
+        if (contentObject == null)
+        {
+            Debug.LogError("HATA: Inspector'da 'Content Object' kýsmýný boþ býrakmýþsýn!");
+            return;
+        }
+
+        // Önce eski listeyi temizle
         foreach (Transform child in contentObject)
         {
             Destroy(child.gameObject);
         }
 
+        // 2. KONTROL: Prefab atanmýþ mý?
+        if (roomItemPrefab == null)
+        {
+            Debug.LogError("HATA: Inspector'da 'Room Item Prefab' kýsmýný boþ býrakmýþsýn!");
+            return;
+        }
+
         foreach (RoomInfo room in roomList)
         {
+            // Kapalý, görünmez veya silinmiþ odalarý atla
             if (room.RemovedFromList || !room.IsOpen || !room.IsVisible) continue;
 
+            // Prefab'ý oluþtur
             GameObject newRow = Instantiate(roomItemPrefab, contentObject);
-            newRow.GetComponent<RoomItem>().SetRoomName(room.Name);
+
+            // 3. KONTROL: Prefab üzerinde 'RoomItem' scripti var mý?
+            RoomItem itemScript = newRow.GetComponent<RoomItem>();
+
+            if (itemScript != null)
+            {
+                itemScript.SetRoomName(room.Name);
+            }
+            else
+            {
+                // Eðer buraya düþerse; Unity'de Prefab'ý aç, "Add Component" diyip RoomItem scriptini ekle.
+                Debug.LogError("HATA: Oluþturulan Prefab üzerinde 'RoomItem' scripti bulunamadý! Lütfen prefab'ý kontrol et.");
+            }
         }
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
     {
-        statusText.text = "Hata: " + message;
-        UnityEngine.Debug.LogError("Oda kurulamadý: " + message); // DÜZELTÝLDÝ
+        if (statusText != null) statusText.text = "Hata: " + message;
+        Debug.LogError("Oda kurulamadý: " + message);
     }
 }

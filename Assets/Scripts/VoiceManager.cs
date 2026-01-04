@@ -14,7 +14,7 @@ public class VoiceManager : MonoBehaviour
     public string geminiApiKey = "API_KEY"; // Yeni aldığın Key'i buraya yaz
 
     // SENİN İSTEDİĞİN ÖZEL URL:
-    private const string API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent"; 
+    private const string API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"; 
     
     [Header("UI Bağlantıları")]
     public TextMeshProUGUI scoreText;      // Sonucu yazacağımız yer
@@ -25,7 +25,7 @@ public class VoiceManager : MonoBehaviour
     private AudioClip recordingClip;
     private string deviceName;
     private bool isRecording = false;
-
+        
     void Awake()
     {
         if (Instance == null) Instance = this;

@@ -8,6 +8,9 @@ public class AlphabetData
     public string wordName;
     public AudioClip letterSound;
     public AudioClip wordSound;
+
+    public string targetWord;       // Örn: "Havuç" (Cevap Anahtarý)
+    public Sprite cardImage;
 }
 
 public class ARAlphabetManager : MonoBehaviour

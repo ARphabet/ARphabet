@@ -1520,7 +1520,7 @@ MonoBehaviour:
   statusText: {fileID: 496634636}
   contentObject: {fileID: 2016008435}
   roomItemPrefab: {fileID: 7926780631924619087, guid: 4ff567798c1faac48a2acc6d7888ff9b, type: 3}
-  lobbyPanel: {fileID: 0}
+  lobbyPanel: {fileID: 1642338903}
 --- !u!114 &968189571
 MonoBehaviour:
   m_ObjectHideFlags: 0
