@@ -11,7 +11,7 @@ public class VoiceManager : MonoBehaviour
     public static VoiceManager Instance;
 
     [Header("Gemini Ayarları")]
-    public string geminiApiKey = "AIzaSyB9kX2AvhuHdap23qIBHBHK9qaNoF432Tc"; // Yeni aldığın Key'i buraya yaz
+    public string geminiApiKey = "API_KEY"; // Yeni aldığın Key'i buraya yaz
 
     // SENİN İSTEDİĞİN ÖZEL URL:
     private const string API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent"; 
@@ -21,7 +21,7 @@ public class VoiceManager : MonoBehaviour
     public TextMeshProUGUI buttonLabel;    // Buton üzerindeki yazı
 
     // --- HAFIZA ---
-    private string aktifHedefKelime = "Havuç"; // Test için varsayılan kelime
+    public string aktifHedefKelime = "Havuç"; // Test için varsayılan kelime
     private AudioClip recordingClip;
     private string deviceName;
     private bool isRecording = false;

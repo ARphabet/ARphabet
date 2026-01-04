@@ -344,90 +344,119 @@ MonoBehaviour:
   uiPanel: {fileID: 407852942}
   alphabetList:
   - letterName: A
+    wordName: "A\u011Fa\xE7"
     letterSound: {fileID: 8300000, guid: a447a6d7c4ac0ae4ba75371dd2d46ade, type: 3}
     wordSound: {fileID: 8300000, guid: b1cc73e8c801b2f4090fbd06fcf33e1e, type: 3}
   - letterName: B
+    wordName: Bulut
     letterSound: {fileID: 8300000, guid: b5535271a50d17c49a4c4647ee429ac8, type: 3}
     wordSound: {fileID: 8300000, guid: a373c6dc377d2654c823932a478a8dbb, type: 3}
   - letterName: C
+    wordName: Ceviz
     letterSound: {fileID: 8300000, guid: cbcdd78a845e6da4d84156e2139545a3, type: 3}
     wordSound: {fileID: 8300000, guid: 97fcba1b003cfcb49b39f83842ae27bf, type: 3}
   - letterName: "\xC7"
+    wordName: "\xC7ilek"
     letterSound: {fileID: 8300000, guid: c783139e87002d846bd997008a51af0a, type: 3}
     wordSound: {fileID: 8300000, guid: 85d0856eb4f946143a1824e9c4450084, type: 3}
   - letterName: D
+    wordName: "D\xFCnya"
     letterSound: {fileID: 8300000, guid: d180ffd049d411541b66b5445cdcc488, type: 3}
     wordSound: {fileID: 8300000, guid: d3505dd911c935d4baaf9713becbe425, type: 3}
   - letterName: E
+    wordName: Elma
     letterSound: {fileID: 8300000, guid: 1e62804020f472149a10b3256d7b20dc, type: 3}
     wordSound: {fileID: 8300000, guid: 54f0aa62b99966a449df4b8aae15757f, type: 3}
   - letterName: F
+    wordName: "F\u0131st\u0131k"
     letterSound: {fileID: 8300000, guid: 4441b0806650c4c40b91cc5c149efbf7, type: 3}
     wordSound: {fileID: 8300000, guid: e8022926c199b5b45b2d6240e49403e9, type: 3}
   - letterName: G
+    wordName: Gemi
     letterSound: {fileID: 8300000, guid: 279661c00db78e2419ebed5a3d567199, type: 3}
     wordSound: {fileID: 8300000, guid: ecf558b1fca624c4bb4e3aeb29989177, type: 3}
   - letterName: "\u011E"
+    wordName: "Da\u011F"
     letterSound: {fileID: 8300000, guid: 2d62d1463a21f644fa24b1e0fbbf31a5, type: 3}
     wordSound: {fileID: 8300000, guid: b12fd5042722cce4f81141a7a320f59c, type: 3}
   - letterName: H
+    wordName: "Havu\xE7"
     letterSound: {fileID: 8300000, guid: 36879ba340e10d84cadf726c22d9f870, type: 3}
     wordSound: {fileID: 8300000, guid: fb4c1952a6cfa914eb5500392432f33b, type: 3}
   - letterName: I
+    wordName: Istakoz
     letterSound: {fileID: 8300000, guid: 938e5aaed0061674ba839ae8e74b3808, type: 3}
     wordSound: {fileID: 8300000, guid: 69b6c7d72dd131e4ca1d3d14b92c91ce, type: 3}
   - letterName: "\u0130"
+    wordName: "\u0130nek"
     letterSound: {fileID: 8300000, guid: 127faa63d352f2d4b85c531aff23b913, type: 3}
     wordSound: {fileID: 8300000, guid: 24ddadb86e6bd4340abc39436a93c09f, type: 3}
   - letterName: J
+    wordName: Jilet
     letterSound: {fileID: 8300000, guid: 49befe632a3c58449b3cef7f8a4b6c86, type: 3}
     wordSound: {fileID: 8300000, guid: e6dd076231f6acb4289af2115e497e43, type: 3}
   - letterName: K
+    wordName: Kanguru
     letterSound: {fileID: 8300000, guid: a416bf59d26caf6418b010b5c60d8e9f, type: 3}
     wordSound: {fileID: 8300000, guid: a5f95df642af03747978e88630bdbec9, type: 3}
   - letterName: L
+    wordName: Limon
     letterSound: {fileID: 8300000, guid: ba3f9d976da3bfb409b89bd7ef3d84e8, type: 3}
     wordSound: {fileID: 8300000, guid: 11c84f3e9681cc244901a762c5d6a9bd, type: 3}
   - letterName: M
+    wordName: Maymun
     letterSound: {fileID: 8300000, guid: 5b3311fd2ce588c458514caa31445be1, type: 3}
     wordSound: {fileID: 8300000, guid: 0c5bef350c9eb834086726958241051d, type: 3}
   - letterName: N
+    wordName: Nar
     letterSound: {fileID: 8300000, guid: 26efbf2407296e541909432d3bc236b8, type: 3}
     wordSound: {fileID: 8300000, guid: 3f0c474eac18e0f4d976014b5d0d0bae, type: 3}
   - letterName: O
+    wordName: Odun
     letterSound: {fileID: 8300000, guid: 069a72262b79a234cad31955494ad8d3, type: 3}
     wordSound: {fileID: 8300000, guid: 2fc02506ca1c4764aab2f228c134f875, type: 3}
   - letterName: "\xD6"
+    wordName: "\xD6rdek"
     letterSound: {fileID: 8300000, guid: 3a14dd484b6369a4ba79052a2eab4044, type: 3}
     wordSound: {fileID: 8300000, guid: b98c467e3210cd1448b2690eaa48f052, type: 3}
   - letterName: P
+    wordName: "Patl\u0131can"
     letterSound: {fileID: 8300000, guid: 44717db41818ac64e8804a897237e1c6, type: 3}
     wordSound: {fileID: 8300000, guid: d9c098ae215252f40ad79852eff0054d, type: 3}
   - letterName: R
+    wordName: Roket
     letterSound: {fileID: 8300000, guid: 0520a40b04f584e45933b1bd9021d6a9, type: 3}
     wordSound: {fileID: 8300000, guid: c825610adddf822449bc5a3b5b3eacb4, type: 3}
   - letterName: S
+    wordName: Saat
     letterSound: {fileID: 8300000, guid: fb7592a1ad6c1404aa2df856f0ba7363, type: 3}
     wordSound: {fileID: 8300000, guid: c4428221e8e660141b6ad7e71985133d, type: 3}
   - letterName: "\u015E"
+    wordName: "\u015Eemsiye"
     letterSound: {fileID: 8300000, guid: 7994c4940bb04114abed540454522075, type: 3}
     wordSound: {fileID: 8300000, guid: 1c104e39933c6684abf741c0d9854f89, type: 3}
   - letterName: T
+    wordName: Turp
     letterSound: {fileID: 8300000, guid: 4b54212c9089b364c8c2461f706d880d, type: 3}
     wordSound: {fileID: 8300000, guid: 347fa9139628b8244a6b95558dd7ef85, type: 3}
   - letterName: U
+    wordName: 
     letterSound: {fileID: 8300000, guid: 7309bf1f72d61044eaebe5338153a142, type: 3}
     wordSound: {fileID: 8300000, guid: f1a59f62e483f9746a86c3ce39532d5a, type: 3}
   - letterName: "\xDC"
+    wordName: 
     letterSound: {fileID: 8300000, guid: 383978ce46a7ab14a879a5e5798c7dee, type: 3}
     wordSound: {fileID: 8300000, guid: 75d32176c722c7d4da57f74721cc4464, type: 3}
   - letterName: V
+    wordName: 
     letterSound: {fileID: 8300000, guid: 911392311a1225c4aa6491f0ed915140, type: 3}
     wordSound: {fileID: 8300000, guid: 872df443097b7bf44a4c1c122e16ed45, type: 3}
   - letterName: Y
+    wordName: 
     letterSound: {fileID: 8300000, guid: 636663338a242b6458fa7b1d884c3a20, type: 3}
     wordSound: {fileID: 8300000, guid: 8d054a4870b1465499f98d50a76a4e5f, type: 3}
   - letterName: Z
+    wordName: 
     letterSound: {fileID: 8300000, guid: 04b3c64aa74499b42b9db8599d435e47, type: 3}
     wordSound: {fileID: 8300000, guid: 11c057bc0ab9e014eab8049269b72d03, type: 3}
 --- !u!1 &151874753
@@ -442,6 +471,7 @@ GameObject:
   - component: {fileID: 151874757}
   - component: {fileID: 151874756}
   - component: {fileID: 151874755}
+  - component: {fileID: 151874758}
   m_Layer: 5
   m_Name: OrnekKelimeBtn
   m_TagString: Untagged
@@ -464,11 +494,11 @@ RectTransform:
   - {fileID: 1103660625}
   m_Father: {fileID: 407852943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 147, y: -116}
-  m_SizeDelta: {x: 650, y: 175}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -50, y: 0}
+  m_SizeDelta: {x: 500, y: 175}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &151874755
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,8 +575,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 1957500794, guid: 156ec492e516ccb4099add479601d65e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -563,6 +593,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151874753}
   m_CullTransparentMesh: 1
+--- !u!114 &151874758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151874753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4081eb4dc86a97140afc7e4c41fcaf51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomButtonEffect
+  normalSprite: {fileID: 1957500794, guid: 156ec492e516ccb4099add479601d65e, type: 3}
+  pressedSprite: {fileID: -1416753801, guid: 156ec492e516ccb4099add479601d65e, type: 3}
 --- !u!1 &158472912
 GameObject:
   m_ObjectHideFlags: 0
@@ -1586,7 +1630,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 407852942}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1972,15 +2016,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: Harfi Oku
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a32d3684bb3e09b458d4410ff5fe54bd, type: 2}
+  m_sharedMaterial: {fileID: -5660775149628104760, guid: a32d3684bb3e09b458d4410ff5fe54bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -2634,9 +2678,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690c40e332d56204dbeedd0c5f7ed4e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VoiceManager
-  geminiApiKey: AIzaSyB9kX2AvhuHdap23qIBHBHK9qaNoF432Tc
+  geminiApiKey: AIzaSyB34NR4F4VFSaA8k6CwwkDNSKDhm_pYYXQ
   scoreText: {fileID: 1547216582}
-  buttonLabel: {fileID: 1487852000}
+  buttonLabel: {fileID: 0}
+  aktifHedefKelime: "Havu\xE7"
 --- !u!1 &857177605
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,6 +2990,7 @@ GameObject:
   - component: {fileID: 938437996}
   - component: {fileID: 938437995}
   - component: {fileID: 938437994}
+  - component: {fileID: 938437997}
   m_Layer: 5
   m_Name: MicButton
   m_TagString: Untagged
@@ -2963,15 +3009,14 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1487851999}
+  m_Children: []
   m_Father: {fileID: 407852943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 85, y: -679}
-  m_SizeDelta: {x: 650, y: 175}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 150}
+  m_SizeDelta: {x: 425, y: 400}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &938437994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3028,6 +3073,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 938437997}
+        m_TargetAssemblyTypeName: CustomButtonEffect2, Assembly-CSharp
+        m_MethodName: ButonResimDegis
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &938437995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3048,8 +3105,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -1406720798, guid: 03a52df36345c2941a4fec0ea550da17, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -3066,6 +3123,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938437992}
   m_CullTransparentMesh: 1
+--- !u!114 &938437997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938437992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0956bb4a5cba59c46a479d49d6363c48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomButtonEffect2
+  normalSprite: {fileID: -1406720798, guid: 03a52df36345c2941a4fec0ea550da17, type: 3}
+  activeSprite: {fileID: -986138049, guid: 03a52df36345c2941a4fec0ea550da17, type: 3}
 --- !u!1 &1100373001
 GameObject:
   m_ObjectHideFlags: 0
@@ -3225,17 +3296,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xD6rnek Kelime"
+  m_text: Ornek Kelime
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a32d3684bb3e09b458d4410ff5fe54bd, type: 2}
+  m_sharedMaterial: {fileID: -5660775149628104760, guid: a32d3684bb3e09b458d4410ff5fe54bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4144,142 +4215,6 @@ MonoBehaviour:
   m_InputActionsPerSecond: 10
   m_RepeatDelay: 0.5
   m_ForceModuleActive: 0
---- !u!1 &1487851998
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1487851999}
-  - component: {fileID: 1487852001}
-  - component: {fileID: 1487852000}
-  m_Layer: 5
-  m_Name: Text (TMP)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1487851999
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487851998}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 938437993}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1487852000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487851998}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: "Mikrofonu A\xE7"
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 0
-  m_fontSizeMax: 0
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 0
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1487852001
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1487851998}
-  m_CullTransparentMesh: 1
 --- !u!1 &1547216580
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,11 +4247,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 407852943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 726}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1080, y: 500}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1547216582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4339,8 +4274,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a32d3684bb3e09b458d4410ff5fe54bd, type: 2}
+  m_sharedMaterial: {fileID: -5660775149628104760, guid: a32d3684bb3e09b458d4410ff5fe54bd, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -6056,6 +5991,7 @@ GameObject:
   - component: {fileID: 2135830539}
   - component: {fileID: 2135830538}
   - component: {fileID: 2135830537}
+  - component: {fileID: 2135830540}
   m_Layer: 5
   m_Name: HarfBtn
   m_TagString: Untagged
@@ -6078,11 +6014,11 @@ RectTransform:
   - {fileID: 468307315}
   m_Father: {fileID: 407852943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 199, y: 358}
-  m_SizeDelta: {x: 650, y: 175}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -50, y: 200}
+  m_SizeDelta: {x: 500, y: 175}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2135830537
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6159,8 +6095,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: -775807451, guid: 156ec492e516ccb4099add479601d65e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6177,6 +6113,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2135830535}
   m_CullTransparentMesh: 1
+--- !u!114 &2135830540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135830535}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4081eb4dc86a97140afc7e4c41fcaf51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CustomButtonEffect
+  normalSprite: {fileID: -775807451, guid: 156ec492e516ccb4099add479601d65e, type: 3}
+  pressedSprite: {fileID: -469477536, guid: 156ec492e516ccb4099add479601d65e, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

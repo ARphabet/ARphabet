@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class AlphabetData
 {
     public string letterName; // Hatýrlatýcý olmasý için (A, B, C...)
+    public string wordName;
     public AudioClip letterSound;
     public AudioClip wordSound;
 }
@@ -23,6 +24,9 @@ public class ARAlphabetManager : MonoBehaviour
         if (isTargetLocked) return;
 
         currentLetterIndex = index;
+
+        VoiceManager.Instance.aktifHedefKelime = alphabetList[currentLetterIndex].wordName;
+
         uiPanel.SetActive(true);
         Debug.Log("Harf kilitlendi: " + alphabetList[index].letterName);
     }

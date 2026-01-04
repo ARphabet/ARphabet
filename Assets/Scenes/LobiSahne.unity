@@ -1012,7 +1012,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 968189571}
         m_TargetAssemblyTypeName: RoomManager, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
@@ -1536,7 +1536,7 @@ MonoBehaviour:
   roomPanel: {fileID: 1768017056}
   playerListText: {fileID: 796543451}
   startButton: {fileID: 697485749}
-  gameSceneName: GameScene
+  gameSceneName: MultiplayerGame
 --- !u!1 &1215977913
 GameObject:
   m_ObjectHideFlags: 0

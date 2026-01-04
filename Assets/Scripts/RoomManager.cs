@@ -13,7 +13,7 @@ public class RoomManager : MonoBehaviourPunCallbacks
     public GameObject startButton;    // Oyunu baþlatma butonu
 
     [Header("Ayarlar")]
-    public string gameSceneName = "GameScene"; // Oyunun asýl sahnesinin adý
+    public string gameSceneName = "MultiplayerGame"; // Oyunun asýl sahnesinin adý
 
     void Start()
     {
