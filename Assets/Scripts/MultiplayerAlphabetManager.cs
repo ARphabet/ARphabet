@@ -1,28 +1,37 @@
-using UnityEngine;
+ï»¿using UnityEngine;
 using UnityEngine.UI;
-using Photon.Pun; // Photon ekledik
-using TMPro;      // UI için
+using Photon.Pun;
+using TMPro;
 using System.Collections.Generic;
 
-// MonoBehaviour yerine MonoBehaviourPunCallbacks yaptık ki internetle konuşabilsin
 public class MultiplayerAlphabetManager : MonoBehaviourPunCallbacks
 {
     public static MultiplayerAlphabetManager Instance;
 
     [Header("Veriler")]
-    public List<AlphabetData> alphabetList; // Senin harf listen
+    public List<AlphabetData> alphabetList;
 
     [Header("UI ve Ses")]
     public AudioSource audioSource;
-    public Image ekrandakiResimKutusu;      // Ortada çıkan soru resmi
-    public TextMeshProUGUI benimPuanText;   // Sol köşe puan
-    public TextMeshProUGUI rakipPuanText;   // Sağ köşe puan
-    public GameObject uiPanel;              // (Eski kodundan kalan panel)
+    public Image ekrandakiResimKutusu;
+    public TextMeshProUGUI benimPuanText;
+    public TextMeshProUGUI rakipPuanText;
 
-    // --- OYUN DEĞİŞKENLERİ ---
+    [Header("Zaman AyarlarÄ±")]
+    public TextMeshProUGUI zamanText;
+    public GameObject oyunSonuPaneli;
+    public TextMeshProUGUI oyunSonuMesajText;
+
+    private const float OYUN_SURESI = 30f;
+    private float kalanSure = 0;
+    private bool oyunDevamEdiyor = false;
+
+    // --- OYUN DEÄÄ°ÅKENLERÄ° ---
     private int[] oyunSirasi;
     private int suankiIndex = 0;
-    private int benimToplamPuanim = 0;
+
+    public int benimToplamPuanim = 0;
+    public int rakipToplamPuanim = 0;
 
     void Awake()
     {
@@ -31,30 +40,65 @@ public class MultiplayerAlphabetManager : MonoBehaviourPunCallbacks
 
     void Start()
     {
-        // Odayı kuran kişi oyunu başlatır
-        if (PhotonNetwork.IsMasterClient)
+        if (oyunSonuPaneli) oyunSonuPaneli.SetActive(false);
+
+        // SENARYO 1: Ä°nternet Yok veya Lobi KullanmadÄ±n (SimÃ¼latÃ¶r Testi)
+        if (!PhotonNetwork.IsConnected)
         {
-            KartlariKaristirVeBaslat();
+            Debug.Log("âš ï¸ TEST MODU: Offline KarÄ±ÅŸtÄ±rma YapÄ±lÄ±yor...");
+            // Rastgele bir liste oluÅŸtur ve oyunu baÅŸlat
+            int[] testSirasi = ListeyiRastgeleOlustur(alphabetList.Count);
+            OyunuBaslatRPC(testSirasi);
+        }
+        // SENARYO 2: GerÃ§ek Oyun (Lobi Ã¼zerinden geldin)
+        else if (PhotonNetwork.IsMasterClient)
+        {
+            Invoke("OnlineKaristirVeBaslat", 2f);
         }
     }
 
-    // --- 1. OYUN KURULUMU ---
-    void KartlariKaristirVeBaslat()
+    void Update()
     {
-        int listeUzunlugu = alphabetList.Count;
-        int[] sira = new int[listeUzunlugu];
-        for (int i = 0; i < listeUzunlugu; i++) sira[i] = i;
+        if (oyunDevamEdiyor)
+        {
+            kalanSure -= Time.deltaTime;
+            if (zamanText) zamanText.text = Mathf.CeilToInt(kalanSure).ToString();
 
-        // Karıştır
+            if (kalanSure <= 0)
+            {
+                oyunDevamEdiyor = false;
+                kalanSure = 0;
+                OyunBitti();
+            }
+        }
+    }
+
+    // --- YENÄ° KARIÅTIRMA FONKSÄ°YONU ---
+    // Bu fonksiyon 0'dan 29'a kadar sayÄ±larÄ± alÄ±r ve Ã§orba yapÄ±p geri verir
+    int[] ListeyiRastgeleOlustur(int uzunluk)
+    {
+        int[] sira = new int[uzunluk];
+        // Ã–nce sÄ±rayla doldur: 0, 1, 2, 3...
+        for (int i = 0; i < uzunluk; i++) sira[i] = i;
+
+        // Sonra Fisher-Yates algoritmasÄ± ile karÄ±ÅŸtÄ±r
         for (int i = 0; i < sira.Length; i++)
         {
-            int rnd = Random.Range(0, sira.Length);
             int temp = sira[i];
-            sira[i] = sira[rnd];
-            sira[rnd] = temp;
+            int randomIndex = Random.Range(i, sira.Length); // Rastgele bir yer seÃ§
+            sira[i] = sira[randomIndex];
+            sira[randomIndex] = temp;
         }
+        return sira;
+    }
 
-        // Herkese gönder
+    // --- GERÃ‡EK OYUN BAÅLATICISI ---
+    void OnlineKaristirVeBaslat()
+    {
+        // Listeyi karÄ±ÅŸtÄ±r
+        int[] sira = ListeyiRastgeleOlustur(alphabetList.Count);
+
+        // Herkese gÃ¶nder
         photonView.RPC("OyunuBaslatRPC", RpcTarget.All, sira);
     }
 
@@ -64,34 +108,35 @@ public class MultiplayerAlphabetManager : MonoBehaviourPunCallbacks
         oyunSirasi = gelenSira;
         suankiIndex = 0;
         benimToplamPuanim = 0;
+        rakipToplamPuanim = 0;
+
+        kalanSure = OYUN_SURESI;
+        oyunDevamEdiyor = true;
 
         if (benimPuanText) benimPuanText.text = "Ben: 0";
         if (rakipPuanText) rakipPuanText.text = "Rakip: 0";
 
-        Debug.Log("Oyun Başladı!");
+        Debug.Log("Oyun BaÅŸladÄ±! Ä°lk Kart ID: " + oyunSirasi[0]);
         KartiAc(oyunSirasi[0]);
     }
 
-    // --- 2. KART AÇMA ---
     void KartiAc(int id)
     {
-        // Listenden veriyi çek
+        if (!oyunDevamEdiyor) return;
+
         AlphabetData kartVerisi = alphabetList[id];
 
-        // Resmi ekrana bas (Eğer UI Image atadıysan)
         if (ekrandakiResimKutusu != null)
         {
-            ekrandakiResimKutusu.sprite = kartVerisi.cardImage; // Data içinde sprite yoksa hata verir, ekle!
+            ekrandakiResimKutusu.sprite = kartVerisi.cardImage;
             ekrandakiResimKutusu.gameObject.SetActive(true);
         }
 
-        // VoiceManager'a "Hedef bu kelime" de
         if (MultiplayerVoiceManager.Instance != null)
         {
-            MultiplayerVoiceManager.Instance.HedefKelimeyiGuncelle(kartVerisi.targetWord); // Data içinde string yoksa hata verir, ekle!
+            MultiplayerVoiceManager.Instance.HedefKelimeyiGuncelle(kartVerisi.targetWord);
         }
 
-        // İstersen harf sesini de çalabilirsin
         if (audioSource)
         {
             audioSource.clip = kartVerisi.letterSound;
@@ -99,38 +144,51 @@ public class MultiplayerAlphabetManager : MonoBehaviourPunCallbacks
         }
     }
 
-    // --- 3. SES SONUCUNU İŞLEME ---
-    // Bunu MultiplayerVoiceManager çağıracak
     public void GeminiSonucunuIsle(int kazanilanPuan)
     {
-        if (kazanilanPuan < 50) return; // Düşük puanı sayma
+        if (!oyunDevamEdiyor) return;
+        if (kazanilanPuan < 50) return;
 
         benimToplamPuanim += kazanilanPuan;
         if (benimPuanText) benimPuanText.text = "Ben: " + benimToplamPuanim;
 
-        // Rakibe hava at
-        photonView.RPC("RakipSkorunuGuncelleRPC", RpcTarget.Others, benimToplamPuanim);
+        if (PhotonNetwork.IsConnected)
+        {
+            photonView.RPC("RakipSkorunuGuncelleRPC", RpcTarget.Others, benimToplamPuanim);
+        }
 
-        // Sonraki
         SiradakiKartaGec();
     }
 
     void SiradakiKartaGec()
     {
         suankiIndex++;
-        if (suankiIndex < oyunSirasi.Length)
+        if (suankiIndex >= oyunSirasi.Length)
         {
-            KartiAc(oyunSirasi[suankiIndex]);
+            suankiIndex = 0; // Liste bitince baÅŸa sar
         }
-        else
-        {
-            Debug.Log("OYUN BİTTİ");
-        }
+        KartiAc(oyunSirasi[suankiIndex]);
     }
 
     [PunRPC]
     public void RakipSkorunuGuncelleRPC(int rakibinYeniPuani)
     {
-        if (rakipPuanText) rakipPuanText.text = "Rakip: " + rakibinYeniPuani;
+        rakipToplamPuanim = rakibinYeniPuani;
+        if (rakipPuanText) rakipPuanText.text = "Rakip: " + rakipToplamPuanim;
+    }
+
+    void OyunBitti()
+    {
+        if (MultiplayerVoiceManager.Instance != null)
+            MultiplayerVoiceManager.Instance.ZorlaDurdur();
+
+        if (oyunSonuPaneli) oyunSonuPaneli.SetActive(true);
+
+        string sonucMesaji = "";
+        if (benimToplamPuanim > rakipToplamPuanim) sonucMesaji = "KAZANDIN!\nSkor: " + benimToplamPuanim;
+        else if (benimToplamPuanim < rakipToplamPuanim) sonucMesaji = "KAYBETTÄ°N...\nRakip: " + rakipToplamPuanim;
+        else sonucMesaji = "BERABERE!";
+
+        if (oyunSonuMesajText) oyunSonuMesajText.text = sonucMesaji;
     }
 }

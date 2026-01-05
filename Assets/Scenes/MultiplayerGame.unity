@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 59968837}
   - component: {fileID: 59968840}
   - component: {fileID: 59968839}
-  - component: {fileID: 59968838}
+  - component: {fileID: 59968841}
   m_Layer: 0
   m_Name: ImageTarget_p
   m_TagString: Untagged
@@ -153,25 +153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &59968838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 59968836}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 59968840}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: p
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 59968840}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &59968839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -266,7 +247,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 59968838}
+  mPreview: {fileID: 59968841}
+--- !u!114 &59968841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59968836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 59968840}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: p
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 59968840}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &64482457
 GameObject:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ GameObject:
   - component: {fileID: 64482458}
   - component: {fileID: 64482461}
   - component: {fileID: 64482460}
-  - component: {fileID: 64482459}
+  - component: {fileID: 64482462}
   m_Layer: 0
   m_Name: ImageTarget_j
   m_TagString: Untagged
@@ -301,25 +301,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &64482459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 64482457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 64482461}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: j
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 64482461}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &64482460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -414,7 +395,162 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 64482459}
+  mPreview: {fileID: 64482462}
+--- !u!114 &64482462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 64482457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 64482461}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: j
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 64482461}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &110976167
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 110976168}
+  - component: {fileID: 110976170}
+  - component: {fileID: 110976169}
+  m_Layer: 5
+  m_Name: BenimPuanText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &110976168
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110976167}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 608333060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -281, y: 547}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &110976169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110976167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'SKORUM: '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &110976170
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110976167}
+  m_CullTransparentMesh: 1
 --- !u!1 &130936382
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +562,7 @@ GameObject:
   - component: {fileID: 130936383}
   - component: {fileID: 130936386}
   - component: {fileID: 130936385}
-  - component: {fileID: 130936384}
+  - component: {fileID: 130936387}
   m_Layer: 0
   m_Name: ImageTarget_k
   m_TagString: Untagged
@@ -449,25 +585,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &130936384
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130936382}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 130936386}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: k
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 130936386}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &130936385
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,7 +679,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 130936384}
+  mPreview: {fileID: 130936387}
+--- !u!114 &130936387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 130936382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 130936386}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: k
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 130936386}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &144425240
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,9 +744,85 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MultiplayerVoiceManager
   geminiApiKey: AIzaSyAj77w2jM3QqPaSrwObYiViwCoEfYhoioQ
-  scoreText: {fileID: 0}
-  buttonLabel: {fileID: 0}
+  scoreText: {fileID: 971906086}
+  buttonLabel: {fileID: 1764501815}
   aktifHedefKelime: 
+--- !u!1 &154948915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 154948916}
+  - component: {fileID: 154948918}
+  - component: {fileID: 154948917}
+  m_Layer: 5
+  m_Name: OyunSonuPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &154948916
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154948915}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1139376694}
+  m_Father: {fileID: 608333060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 11}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &154948917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154948915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.49056602, g: 0.49056602, b: 0.49056602, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &154948918
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154948915}
+  m_CullTransparentMesh: 1
 --- !u!1 &180721591
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,7 +834,7 @@ GameObject:
   - component: {fileID: 180721592}
   - component: {fileID: 180721595}
   - component: {fileID: 180721594}
-  - component: {fileID: 180721593}
+  - component: {fileID: 180721596}
   m_Layer: 0
   m_Name: ImageTarget_i1
   m_TagString: Untagged
@@ -645,25 +857,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &180721593
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 180721591}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 180721595}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: i1
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 180721595}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &180721594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -758,7 +951,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 180721593}
+  mPreview: {fileID: 180721596}
+--- !u!114 &180721596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180721591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 180721595}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: i1
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 180721595}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &323101326
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +982,7 @@ GameObject:
   - component: {fileID: 323101327}
   - component: {fileID: 323101330}
   - component: {fileID: 323101329}
-  - component: {fileID: 323101328}
+  - component: {fileID: 323101331}
   m_Layer: 0
   m_Name: ImageTarget_e
   m_TagString: Untagged
@@ -793,25 +1005,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &323101328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 323101326}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 323101330}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: e
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 323101330}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &323101329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -906,7 +1099,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 323101328}
+  mPreview: {fileID: 323101331}
+--- !u!114 &323101331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 323101326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 323101330}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: e
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 323101330}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &434434174
 GameObject:
   m_ObjectHideFlags: 0
@@ -918,7 +1130,7 @@ GameObject:
   - component: {fileID: 434434175}
   - component: {fileID: 434434178}
   - component: {fileID: 434434177}
-  - component: {fileID: 434434176}
+  - component: {fileID: 434434179}
   m_Layer: 0
   m_Name: ImageTarget_b
   m_TagString: Untagged
@@ -941,25 +1153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &434434176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 434434174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 434434178}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: b
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 434434178}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &434434177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1054,7 +1247,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 434434176}
+  mPreview: {fileID: 434434179}
+--- !u!114 &434434179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 434434174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 434434178}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: b
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 434434178}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &456193988
 GameObject:
   m_ObjectHideFlags: 0
@@ -1066,7 +1278,7 @@ GameObject:
   - component: {fileID: 456193989}
   - component: {fileID: 456193992}
   - component: {fileID: 456193991}
-  - component: {fileID: 456193990}
+  - component: {fileID: 456193993}
   m_Layer: 0
   m_Name: ImageTarget_c
   m_TagString: Untagged
@@ -1089,25 +1301,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &456193990
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456193988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 456193992}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: c
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 456193992}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &456193991
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1202,7 +1395,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 456193990}
+  mPreview: {fileID: 456193993}
+--- !u!114 &456193993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456193988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 456193992}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: c
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 456193992}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &456631387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1426,7 @@ GameObject:
   - component: {fileID: 456631388}
   - component: {fileID: 456631391}
   - component: {fileID: 456631390}
-  - component: {fileID: 456631389}
+  - component: {fileID: 456631392}
   m_Layer: 0
   m_Name: ImageTarget_t
   m_TagString: Untagged
@@ -1237,25 +1449,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &456631389
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456631387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 456631391}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: t
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 456631391}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &456631390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1350,7 +1543,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 456631389}
+  mPreview: {fileID: 456631392}
+--- !u!114 &456631392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456631387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 456631391}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: t
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 456631391}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &456840794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1362,7 +1574,7 @@ GameObject:
   - component: {fileID: 456840795}
   - component: {fileID: 456840798}
   - component: {fileID: 456840797}
-  - component: {fileID: 456840796}
+  - component: {fileID: 456840799}
   m_Layer: 0
   m_Name: ImageTarget_u1
   m_TagString: Untagged
@@ -1385,25 +1597,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &456840796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 456840794}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 456840798}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: u1
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 456840798}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &456840797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1498,7 +1691,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 456840796}
+  mPreview: {fileID: 456840799}
+--- !u!114 &456840799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 456840794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 456840798}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: u1
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 456840798}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &467790393
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,7 +1898,7 @@ GameObject:
   - component: {fileID: 585141263}
   - component: {fileID: 585141266}
   - component: {fileID: 585141265}
-  - component: {fileID: 585141264}
+  - component: {fileID: 585141267}
   m_Layer: 0
   m_Name: ImageTarget_l
   m_TagString: Untagged
@@ -1709,25 +1921,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &585141264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 585141262}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 585141266}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: l
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 585141266}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &585141265
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1822,7 +2015,134 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 585141264}
+  mPreview: {fileID: 585141267}
+--- !u!114 &585141267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585141262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 585141266}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: l
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 585141266}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &608333056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 608333060}
+  - component: {fileID: 608333059}
+  - component: {fileID: 608333058}
+  - component: {fileID: 608333057}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &608333057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608333056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &608333058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608333056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 1
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &608333059
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608333056}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &608333060
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 608333056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 822090522}
+  - {fileID: 110976168}
+  - {fileID: 1108811846}
+  - {fileID: 154948916}
+  - {fileID: 1142528396}
+  - {fileID: 971906088}
+  - {fileID: 2080977093}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &622883015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,7 +2154,7 @@ GameObject:
   - component: {fileID: 622883016}
   - component: {fileID: 622883019}
   - component: {fileID: 622883018}
-  - component: {fileID: 622883017}
+  - component: {fileID: 622883020}
   m_Layer: 0
   m_Name: ImageTarget_r
   m_TagString: Untagged
@@ -1857,25 +2177,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &622883017
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622883015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 622883019}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: r
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 622883019}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &622883018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1970,7 +2271,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 622883017}
+  mPreview: {fileID: 622883020}
+--- !u!114 &622883020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622883015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 622883019}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: r
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 622883019}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &753134109
 GameObject:
   m_ObjectHideFlags: 0
@@ -1982,7 +2302,7 @@ GameObject:
   - component: {fileID: 753134110}
   - component: {fileID: 753134113}
   - component: {fileID: 753134112}
-  - component: {fileID: 753134111}
+  - component: {fileID: 753134114}
   m_Layer: 0
   m_Name: ImageTarget_i
   m_TagString: Untagged
@@ -2005,25 +2325,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &753134111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 753134109}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 753134113}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: i
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 753134113}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &753134112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,7 +2419,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 753134111}
+  mPreview: {fileID: 753134114}
+--- !u!114 &753134114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753134109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 753134113}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: i
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 753134113}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &768610046
 GameObject:
   m_ObjectHideFlags: 0
@@ -2130,7 +2450,7 @@ GameObject:
   - component: {fileID: 768610047}
   - component: {fileID: 768610050}
   - component: {fileID: 768610049}
-  - component: {fileID: 768610048}
+  - component: {fileID: 768610051}
   m_Layer: 0
   m_Name: ImageTarget_d
   m_TagString: Untagged
@@ -2153,25 +2473,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &768610048
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 768610046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 768610050}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: d
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 768610050}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &768610049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2266,7 +2567,101 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 768610048}
+  mPreview: {fileID: 768610051}
+--- !u!114 &768610051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 768610046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 768610050}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: d
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 768610050}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &822090521
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 822090522}
+  - component: {fileID: 822090524}
+  - component: {fileID: 822090523}
+  m_Layer: 5
+  m_Name: SoruResmi
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &822090522
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822090521}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 608333060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 450, y: 800}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &822090523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822090521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &822090524
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 822090521}
+  m_CullTransparentMesh: 1
 --- !u!1 &879671874
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,7 +2673,7 @@ GameObject:
   - component: {fileID: 879671875}
   - component: {fileID: 879671878}
   - component: {fileID: 879671877}
-  - component: {fileID: 879671876}
+  - component: {fileID: 879671879}
   m_Layer: 0
   m_Name: ImageTarget_a
   m_TagString: Untagged
@@ -2301,25 +2696,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &879671876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 879671874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 879671878}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: a
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 879671878}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &879671877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2414,7 +2790,162 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 879671876}
+  mPreview: {fileID: 879671879}
+--- !u!114 &879671879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879671874}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 879671878}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: a
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 879671878}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &971906085
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 971906088}
+  - component: {fileID: 971906087}
+  - component: {fileID: 971906086}
+  m_Layer: 5
+  m_Name: SesDurumuText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &971906086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971906085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Ses Durumu: '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &971906087
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971906085}
+  m_CullTransparentMesh: 1
+--- !u!224 &971906088
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 971906085}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 608333060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -283, y: -787}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1009534207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2426,7 +2957,7 @@ GameObject:
   - component: {fileID: 1009534208}
   - component: {fileID: 1009534211}
   - component: {fileID: 1009534210}
-  - component: {fileID: 1009534209}
+  - component: {fileID: 1009534212}
   m_Layer: 0
   m_Name: ImageTarget_y
   m_TagString: Untagged
@@ -2449,25 +2980,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1009534209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1009534207}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1009534211}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: y
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1009534211}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1009534210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2562,7 +3074,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1009534209}
+  mPreview: {fileID: 1009534212}
+--- !u!114 &1009534212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009534207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1009534211}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: y
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1009534211}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1032839996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,7 +3105,7 @@ GameObject:
   - component: {fileID: 1032839997}
   - component: {fileID: 1032840000}
   - component: {fileID: 1032839999}
-  - component: {fileID: 1032839998}
+  - component: {fileID: 1032840001}
   m_Layer: 0
   m_Name: ImageTarget_s1
   m_TagString: Untagged
@@ -2597,25 +3128,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1032839998
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1032839996}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1032840000}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: s1
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1032840000}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1032839999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,7 +3222,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1032839998}
+  mPreview: {fileID: 1032840001}
+--- !u!114 &1032840001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032839996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1032840000}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: s1
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1032840000}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1095211017
 GameObject:
   m_ObjectHideFlags: 0
@@ -2722,7 +3253,7 @@ GameObject:
   - component: {fileID: 1095211018}
   - component: {fileID: 1095211021}
   - component: {fileID: 1095211020}
-  - component: {fileID: 1095211019}
+  - component: {fileID: 1095211022}
   m_Layer: 0
   m_Name: ImageTarget_o1
   m_TagString: Untagged
@@ -2745,25 +3276,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1095211019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1095211017}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1095211021}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: o1
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1095211021}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1095211020
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2858,7 +3370,434 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1095211019}
+  mPreview: {fileID: 1095211022}
+--- !u!114 &1095211022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095211017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1095211021}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: o1
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1095211021}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &1108811845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108811846}
+  - component: {fileID: 1108811848}
+  - component: {fileID: 1108811847}
+  m_Layer: 5
+  m_Name: ZamanText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1108811846
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108811845}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 608333060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 278, y: 655}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1108811847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108811845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "S\xDCRE: "
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1108811848
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108811845}
+  m_CullTransparentMesh: 1
+--- !u!1 &1139376693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1139376694}
+  - component: {fileID: 1139376696}
+  - component: {fileID: 1139376695}
+  m_Layer: 5
+  m_Name: '"SonucMesajText'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1139376694
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139376693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 154948916}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 473}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1139376695
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139376693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "SONU\xC7 : "
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1139376696
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1139376693}
+  m_CullTransparentMesh: 1
+--- !u!1 &1142528395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1142528396}
+  - component: {fileID: 1142528398}
+  - component: {fileID: 1142528397}
+  m_Layer: 5
+  m_Name: RakipPuanText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1142528396
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142528395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 608333060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -281, y: 638}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1142528397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142528395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "RAK\u0130B\u0130N SKORU:"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1142528398
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142528395}
+  m_CullTransparentMesh: 1
 --- !u!1 &1148722386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2870,7 +3809,7 @@ GameObject:
   - component: {fileID: 1148722387}
   - component: {fileID: 1148722390}
   - component: {fileID: 1148722389}
-  - component: {fileID: 1148722388}
+  - component: {fileID: 1148722391}
   m_Layer: 0
   m_Name: ImageTarget_n
   m_TagString: Untagged
@@ -2893,25 +3832,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1148722388
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1148722386}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1148722390}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: n
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1148722390}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1148722389
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3006,7 +3926,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1148722388}
+  mPreview: {fileID: 1148722391}
+--- !u!114 &1148722391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1148722386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1148722390}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: n
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1148722390}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1152867745
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +3957,7 @@ GameObject:
   - component: {fileID: 1152867746}
   - component: {fileID: 1152867749}
   - component: {fileID: 1152867748}
-  - component: {fileID: 1152867747}
+  - component: {fileID: 1152867750}
   m_Layer: 0
   m_Name: ImageTarget_h
   m_TagString: Untagged
@@ -3041,25 +3980,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1152867747
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152867745}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1152867749}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: h
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1152867749}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1152867748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3154,7 +4074,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1152867747}
+  mPreview: {fileID: 1152867750}
+--- !u!114 &1152867750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152867745}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1152867749}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: h
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1152867749}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1164057524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3166,7 +4105,7 @@ GameObject:
   - component: {fileID: 1164057525}
   - component: {fileID: 1164057528}
   - component: {fileID: 1164057527}
-  - component: {fileID: 1164057526}
+  - component: {fileID: 1164057529}
   m_Layer: 0
   m_Name: ImageTarget_u
   m_TagString: Untagged
@@ -3189,25 +4128,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1164057526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1164057524}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1164057528}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: u
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1164057528}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1164057527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3302,7 +4222,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1164057526}
+  mPreview: {fileID: 1164057529}
+--- !u!114 &1164057529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1164057524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1164057528}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: u
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1164057528}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1200361443
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,7 +4253,7 @@ GameObject:
   - component: {fileID: 1200361444}
   - component: {fileID: 1200361447}
   - component: {fileID: 1200361446}
-  - component: {fileID: 1200361445}
+  - component: {fileID: 1200361448}
   m_Layer: 0
   m_Name: ImageTarget_c1
   m_TagString: Untagged
@@ -3337,25 +4276,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1200361445
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1200361443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1200361447}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: c1
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1200361447}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1200361446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3450,7 +4370,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1200361445}
+  mPreview: {fileID: 1200361448}
+--- !u!114 &1200361448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200361443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1200361447}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: c1
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1200361447}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1421160263
 GameObject:
   m_ObjectHideFlags: 0
@@ -3461,6 +4400,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1421160265}
   - component: {fileID: 1421160266}
+  - component: {fileID: 1421160267}
+  - component: {fileID: 1421160268}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3477,7 +4418,7 @@ Transform:
   m_GameObject: {fileID: 1421160263}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 802, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3526,145 +4467,145 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MultiplayerAlphabetManager
   alphabetList:
   - letterName: A
-    wordName: 
+    wordName: "A\u011Fa\xE7"
     letterSound: {fileID: 8300000, guid: a447a6d7c4ac0ae4ba75371dd2d46ade, type: 3}
     wordSound: {fileID: 8300000, guid: b1cc73e8c801b2f4090fbd06fcf33e1e, type: 3}
     targetWord: "A\u011Fa\xE7"
     cardImage: {fileID: 21300000, guid: 4de4ce86066ba714786018621f98ab12, type: 3}
   - letterName: B
-    wordName: 
+    wordName: Bulut
     letterSound: {fileID: 8300000, guid: b5535271a50d17c49a4c4647ee429ac8, type: 3}
     wordSound: {fileID: 8300000, guid: a373c6dc377d2654c823932a478a8dbb, type: 3}
     targetWord: Bulut
     cardImage: {fileID: 21300000, guid: f9371bb1bd5063b49af38dfb1e0201e7, type: 3}
   - letterName: C
-    wordName: 
+    wordName: Ceviz
     letterSound: {fileID: 8300000, guid: cbcdd78a845e6da4d84156e2139545a3, type: 3}
     wordSound: {fileID: 8300000, guid: 97fcba1b003cfcb49b39f83842ae27bf, type: 3}
     targetWord: Ceviz
     cardImage: {fileID: 21300000, guid: 2e85eabdb44ae4a42b5a44f0fedd9b6b, type: 3}
   - letterName: "\xC7"
-    wordName: 
+    wordName: "\xC7ilek"
     letterSound: {fileID: 8300000, guid: c783139e87002d846bd997008a51af0a, type: 3}
     wordSound: {fileID: 8300000, guid: 85d0856eb4f946143a1824e9c4450084, type: 3}
     targetWord: "\xC7ilek"
     cardImage: {fileID: 21300000, guid: 12deece5f1350db4bbcd0bda889d1c7a, type: 3}
   - letterName: D
-    wordName: 
+    wordName: "D\xFCnya"
     letterSound: {fileID: 8300000, guid: d180ffd049d411541b66b5445cdcc488, type: 3}
     wordSound: {fileID: 8300000, guid: d3505dd911c935d4baaf9713becbe425, type: 3}
     targetWord: "D\xFCnya"
     cardImage: {fileID: 21300000, guid: 7a4aaf4942946ac44be1c5ee877471c8, type: 3}
   - letterName: E
-    wordName: 
+    wordName: Elma
     letterSound: {fileID: 8300000, guid: 1e62804020f472149a10b3256d7b20dc, type: 3}
     wordSound: {fileID: 8300000, guid: 54f0aa62b99966a449df4b8aae15757f, type: 3}
     targetWord: Elma
     cardImage: {fileID: 21300000, guid: d7ebe93664215da4fac7eebba63bd427, type: 3}
   - letterName: F
-    wordName: 
+    wordName: "F\u0131st\u0131k"
     letterSound: {fileID: 8300000, guid: 4441b0806650c4c40b91cc5c149efbf7, type: 3}
     wordSound: {fileID: 8300000, guid: e8022926c199b5b45b2d6240e49403e9, type: 3}
     targetWord: "F\u0131st\u0131k"
     cardImage: {fileID: 21300000, guid: af3603496e18f3446977142f3e600998, type: 3}
   - letterName: G
-    wordName: 
+    wordName: Gemi
     letterSound: {fileID: 8300000, guid: 279661c00db78e2419ebed5a3d567199, type: 3}
     wordSound: {fileID: 8300000, guid: ecf558b1fca624c4bb4e3aeb29989177, type: 3}
     targetWord: Gemi
     cardImage: {fileID: 21300000, guid: 8b3fc5505cff9294fa28bcaa0c6d12a6, type: 3}
   - letterName: "\u011E"
-    wordName: 
+    wordName: "Da\u011F"
     letterSound: {fileID: 8300000, guid: 2d62d1463a21f644fa24b1e0fbbf31a5, type: 3}
     wordSound: {fileID: 8300000, guid: b12fd5042722cce4f81141a7a320f59c, type: 3}
     targetWord: "Da\u011F"
     cardImage: {fileID: 21300000, guid: 5e5d605724cfef64e8ae9aff439ddd52, type: 3}
   - letterName: H
-    wordName: 
+    wordName: "Havu\xE7"
     letterSound: {fileID: 8300000, guid: 36879ba340e10d84cadf726c22d9f870, type: 3}
     wordSound: {fileID: 8300000, guid: fb4c1952a6cfa914eb5500392432f33b, type: 3}
     targetWord: "Havu\xE7"
     cardImage: {fileID: 21300000, guid: bbe8b0e320032b14a8b0bf92c4f472ab, type: 3}
   - letterName: I
-    wordName: 
+    wordName: Istakoz
     letterSound: {fileID: 8300000, guid: 938e5aaed0061674ba839ae8e74b3808, type: 3}
     wordSound: {fileID: 8300000, guid: 69b6c7d72dd131e4ca1d3d14b92c91ce, type: 3}
     targetWord: Istakoz
     cardImage: {fileID: 21300000, guid: 530d62e3bbbdb8141a43c0a100bfc389, type: 3}
   - letterName: "\u0130"
-    wordName: 
+    wordName: "\u0130nek"
     letterSound: {fileID: 8300000, guid: 127faa63d352f2d4b85c531aff23b913, type: 3}
     wordSound: {fileID: 8300000, guid: 24ddadb86e6bd4340abc39436a93c09f, type: 3}
     targetWord: "\u0130nek"
     cardImage: {fileID: 21300000, guid: 6f2ce404e0edde245aeacf1bd9032cea, type: 3}
   - letterName: J
-    wordName: 
+    wordName: Jilet
     letterSound: {fileID: 8300000, guid: 49befe632a3c58449b3cef7f8a4b6c86, type: 3}
     wordSound: {fileID: 8300000, guid: e6dd076231f6acb4289af2115e497e43, type: 3}
     targetWord: Jilet
     cardImage: {fileID: 21300000, guid: 61c6a84959accb949ba6ebc431be6818, type: 3}
   - letterName: K
-    wordName: 
+    wordName: Kanguru
     letterSound: {fileID: 8300000, guid: a416bf59d26caf6418b010b5c60d8e9f, type: 3}
     wordSound: {fileID: 8300000, guid: a5f95df642af03747978e88630bdbec9, type: 3}
     targetWord: Kanguru
     cardImage: {fileID: 21300000, guid: 3c8038c92edfb6940a9e3c5b9ccf10fb, type: 3}
   - letterName: L
-    wordName: 
+    wordName: Limon
     letterSound: {fileID: 8300000, guid: ba3f9d976da3bfb409b89bd7ef3d84e8, type: 3}
     wordSound: {fileID: 8300000, guid: 11c84f3e9681cc244901a762c5d6a9bd, type: 3}
     targetWord: Limon
     cardImage: {fileID: 21300000, guid: 874f8f77ff8072d4abcaa6b0abf7cceb, type: 3}
   - letterName: M
-    wordName: 
+    wordName: Maymun
     letterSound: {fileID: 8300000, guid: 5b3311fd2ce588c458514caa31445be1, type: 3}
     wordSound: {fileID: 8300000, guid: 0c5bef350c9eb834086726958241051d, type: 3}
     targetWord: Maymun
     cardImage: {fileID: 21300000, guid: d3b8eea2f7ef16d47826521a05cbd585, type: 3}
   - letterName: N
-    wordName: 
+    wordName: Nar
     letterSound: {fileID: 8300000, guid: 26efbf2407296e541909432d3bc236b8, type: 3}
     wordSound: {fileID: 8300000, guid: 3f0c474eac18e0f4d976014b5d0d0bae, type: 3}
     targetWord: Nar
     cardImage: {fileID: 21300000, guid: 2944216b5fc5ac341b4836857a293e13, type: 3}
   - letterName: O
-    wordName: 
+    wordName: Odun
     letterSound: {fileID: 8300000, guid: 069a72262b79a234cad31955494ad8d3, type: 3}
     wordSound: {fileID: 8300000, guid: 2fc02506ca1c4764aab2f228c134f875, type: 3}
     targetWord: Odun
     cardImage: {fileID: 21300000, guid: c4b22e3f1d8085b44b068f7d185ffe67, type: 3}
   - letterName: "\xD6"
-    wordName: 
+    wordName: "\xD6rdek"
     letterSound: {fileID: 8300000, guid: 3a14dd484b6369a4ba79052a2eab4044, type: 3}
     wordSound: {fileID: 8300000, guid: b98c467e3210cd1448b2690eaa48f052, type: 3}
     targetWord: "\xD6rdek"
     cardImage: {fileID: 21300000, guid: da068150a9cd4b94db766313808f5a88, type: 3}
   - letterName: P
-    wordName: 
+    wordName: "Patl\u0131can "
     letterSound: {fileID: 8300000, guid: 44717db41818ac64e8804a897237e1c6, type: 3}
     wordSound: {fileID: 8300000, guid: d9c098ae215252f40ad79852eff0054d, type: 3}
     targetWord: "Patl\u0131can "
     cardImage: {fileID: 21300000, guid: 183be766854c63148abb456cea3aefa2, type: 3}
   - letterName: R
-    wordName: 
+    wordName: Roket
     letterSound: {fileID: 8300000, guid: 0520a40b04f584e45933b1bd9021d6a9, type: 3}
     wordSound: {fileID: 8300000, guid: c825610adddf822449bc5a3b5b3eacb4, type: 3}
     targetWord: Roket
     cardImage: {fileID: 21300000, guid: 41ddb7afda3b8d94db49326a8b5ec1b6, type: 3}
   - letterName: S
-    wordName: 
+    wordName: Saat
     letterSound: {fileID: 8300000, guid: fb7592a1ad6c1404aa2df856f0ba7363, type: 3}
     wordSound: {fileID: 8300000, guid: c4428221e8e660141b6ad7e71985133d, type: 3}
     targetWord: Saat
     cardImage: {fileID: 21300000, guid: 2062e8d96ce385944a1bbd6484596e99, type: 3}
   - letterName: "\u015E"
-    wordName: 
+    wordName: "\u015Eemsiye"
     letterSound: {fileID: 8300000, guid: 7994c4940bb04114abed540454522075, type: 3}
     wordSound: {fileID: 8300000, guid: 1c104e39933c6684abf741c0d9854f89, type: 3}
     targetWord: "\u015Eemsiye"
     cardImage: {fileID: 21300000, guid: 4465a95d2a894c64bb31c6c5134605d9, type: 3}
   - letterName: T
-    wordName: 
+    wordName: Turp
     letterSound: {fileID: 8300000, guid: 4b54212c9089b364c8c2461f706d880d, type: 3}
     wordSound: {fileID: 8300000, guid: 347fa9139628b8244a6b95558dd7ef85, type: 3}
     targetWord: Turp
@@ -3699,11 +4640,134 @@ MonoBehaviour:
     wordSound: {fileID: 8300000, guid: 11c057bc0ab9e014eab8049269b72d03, type: 3}
     targetWord: Zeytin
     cardImage: {fileID: 21300000, guid: 66d421d64b633f94bb2a0b5dd48dd84e, type: 3}
-  audioSource: {fileID: 0}
-  ekrandakiResimKutusu: {fileID: 0}
-  benimPuanText: {fileID: 0}
-  rakipPuanText: {fileID: 0}
-  uiPanel: {fileID: 0}
+  audioSource: {fileID: 1421160267}
+  ekrandakiResimKutusu: {fileID: 822090523}
+  benimPuanText: {fileID: 110976169}
+  rakipPuanText: {fileID: 1142528397}
+  zamanText: {fileID: 1108811847}
+  oyunSonuPaneli: {fileID: 154948915}
+  oyunSonuMesajText: {fileID: 1139376695}
+  benimToplamPuanim: 0
+  rakipToplamPuanim: 0
+--- !u!82 &1421160267
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421160263}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1421160268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421160263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: PhotonUnityNetworking::Photon.Pun.PhotonView
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 1
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &1522145686
 GameObject:
   m_ObjectHideFlags: 0
@@ -3807,7 +4871,7 @@ GameObject:
   - component: {fileID: 1592166918}
   - component: {fileID: 1592166921}
   - component: {fileID: 1592166920}
-  - component: {fileID: 1592166919}
+  - component: {fileID: 1592166922}
   m_Layer: 0
   m_Name: ImageTarget_g
   m_TagString: Untagged
@@ -3830,25 +4894,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1592166919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1592166917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1592166921}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: g
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1592166921}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1592166920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3943,7 +4988,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1592166919}
+  mPreview: {fileID: 1592166922}
+--- !u!114 &1592166922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592166917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1592166921}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: g
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1592166921}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1595588660
 GameObject:
   m_ObjectHideFlags: 0
@@ -3955,7 +5019,7 @@ GameObject:
   - component: {fileID: 1595588661}
   - component: {fileID: 1595588664}
   - component: {fileID: 1595588663}
-  - component: {fileID: 1595588662}
+  - component: {fileID: 1595588665}
   m_Layer: 0
   m_Name: ImageTarget_m
   m_TagString: Untagged
@@ -3978,25 +5042,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1595588662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1595588660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1595588664}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: m
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1595588664}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1595588663
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4091,7 +5136,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1595588662}
+  mPreview: {fileID: 1595588665}
+--- !u!114 &1595588665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595588660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1595588664}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: m
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1595588664}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1652092434
 GameObject:
   m_ObjectHideFlags: 0
@@ -4103,7 +5167,7 @@ GameObject:
   - component: {fileID: 1652092435}
   - component: {fileID: 1652092438}
   - component: {fileID: 1652092437}
-  - component: {fileID: 1652092436}
+  - component: {fileID: 1652092439}
   m_Layer: 0
   m_Name: ImageTarget_o
   m_TagString: Untagged
@@ -4126,25 +5190,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1652092436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652092434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1652092438}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: o
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1652092438}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1652092437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4239,7 +5284,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1652092436}
+  mPreview: {fileID: 1652092439}
+--- !u!114 &1652092439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1652092434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1652092438}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: o
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1652092438}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1720189659
 GameObject:
   m_ObjectHideFlags: 0
@@ -4251,7 +5315,7 @@ GameObject:
   - component: {fileID: 1720189660}
   - component: {fileID: 1720189663}
   - component: {fileID: 1720189662}
-  - component: {fileID: 1720189661}
+  - component: {fileID: 1720189664}
   m_Layer: 0
   m_Name: ImageTarget_v
   m_TagString: Untagged
@@ -4274,25 +5338,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1720189661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1720189659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1720189663}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: v
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1720189663}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1720189662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4387,7 +5432,162 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1720189661}
+  mPreview: {fileID: 1720189664}
+--- !u!114 &1720189664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720189659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1720189663}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: v
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1720189663}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &1764501813
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1764501814}
+  - component: {fileID: 1764501816}
+  - component: {fileID: 1764501815}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1764501814
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764501813}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2080977093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1764501815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764501813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Mikrofon
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4281479730
+  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1764501816
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1764501813}
+  m_CullTransparentMesh: 1
 --- !u!1 &1843798214
 GameObject:
   m_ObjectHideFlags: 0
@@ -4399,7 +5599,7 @@ GameObject:
   - component: {fileID: 1843798215}
   - component: {fileID: 1843798218}
   - component: {fileID: 1843798217}
-  - component: {fileID: 1843798216}
+  - component: {fileID: 1843798219}
   m_Layer: 0
   m_Name: ImageTarget_f
   m_TagString: Untagged
@@ -4422,25 +5622,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1843798216
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1843798214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1843798218}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: f
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1843798218}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1843798217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4535,7 +5716,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1843798216}
+  mPreview: {fileID: 1843798219}
+--- !u!114 &1843798219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843798214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1843798218}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: f
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1843798218}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &1892313809
 GameObject:
   m_ObjectHideFlags: 0
@@ -4547,7 +5747,7 @@ GameObject:
   - component: {fileID: 1892313810}
   - component: {fileID: 1892313813}
   - component: {fileID: 1892313812}
-  - component: {fileID: 1892313811}
+  - component: {fileID: 1892313814}
   m_Layer: 0
   m_Name: ImageTarget_s
   m_TagString: Untagged
@@ -4570,25 +5770,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1892313811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1892313809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 1892313813}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: s
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 1892313813}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &1892313812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4683,7 +5864,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 1892313811}
+  mPreview: {fileID: 1892313814}
+--- !u!114 &1892313814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892313809}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 1892313813}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: s
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 1892313813}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2013577281
 GameObject:
   m_ObjectHideFlags: 0
@@ -4695,7 +5895,7 @@ GameObject:
   - component: {fileID: 2013577282}
   - component: {fileID: 2013577285}
   - component: {fileID: 2013577284}
-  - component: {fileID: 2013577283}
+  - component: {fileID: 2013577286}
   m_Layer: 0
   m_Name: ImageTarget_z
   m_TagString: Untagged
@@ -4718,25 +5918,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2013577283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013577281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 2013577285}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: z
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 2013577285}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2013577284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4831,7 +6012,26 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2013577283}
+  mPreview: {fileID: 2013577286}
+--- !u!114 &2013577286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013577281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 2013577285}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: z
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 2013577285}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
 --- !u!1 &2025374346
 GameObject:
   m_ObjectHideFlags: 0
@@ -4843,7 +6043,7 @@ GameObject:
   - component: {fileID: 2025374347}
   - component: {fileID: 2025374350}
   - component: {fileID: 2025374349}
-  - component: {fileID: 2025374348}
+  - component: {fileID: 2025374351}
   m_Layer: 0
   m_Name: ImageTarget_g1
   m_TagString: Untagged
@@ -4866,25 +6066,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1421160265}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2025374348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025374346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
-  mObserverBehaviour: {fileID: 2025374350}
-  mHiddenRoot: {fileID: 0}
-  mTargetName: g1
-  mDatasetName: Vuforia/ARphabet.xml
-  mCastedBehaviour: {fileID: 2025374350}
-  mMeshFilter: {fileID: 0}
-  mMeshRenderer: {fileID: 0}
 --- !u!114 &2025374349
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4979,7 +6160,159 @@ MonoBehaviour:
   mMotionHint: 1
   mTrackingOptimization: 0
   mTrackingOptimizationNeedsUpgrade: 0
-  mPreview: {fileID: 2025374348}
+  mPreview: {fileID: 2025374351}
+--- !u!114 &2025374351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025374346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1778676317, guid: 8a9a760f95896c34689febc965510927, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Vuforia.Unity.Engine.dll::Vuforia.ImageTargetPreview
+  mObserverBehaviour: {fileID: 2025374350}
+  mHiddenRoot: {fileID: 0}
+  mTargetName: g1
+  mDatasetName: Vuforia/ARphabet.xml
+  mCastedBehaviour: {fileID: 2025374350}
+  mMeshFilter: {fileID: 0}
+  mMeshRenderer: {fileID: 0}
+--- !u!1 &2080977092
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2080977093}
+  - component: {fileID: 2080977096}
+  - component: {fileID: 2080977095}
+  - component: {fileID: 2080977094}
+  m_Layer: 5
+  m_Name: MikrofonButonu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2080977093
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080977092}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1764501814}
+  m_Father: {fileID: 608333060}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -557}
+  m_SizeDelta: {x: 300, y: 80}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2080977094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080977092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2080977095}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 144425243}
+        m_TargetAssemblyTypeName: MultiplayerVoiceManager, Assembly-CSharp
+        m_MethodName: ButonMikrofonBas
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2080977095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080977092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2080977096
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2080977092}
+  m_CullTransparentMesh: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -4989,3 +6322,4 @@ SceneRoots:
   - {fileID: 1421160265}
   - {fileID: 144425242}
   - {fileID: 516941595}
+  - {fileID: 608333060}

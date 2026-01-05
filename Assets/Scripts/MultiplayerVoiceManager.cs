@@ -195,6 +195,13 @@ public class MultiplayerVoiceManager : MonoBehaviour
         }
         catch { return "Hata"; }
     }
+    public void ZorlaDurdur()
+    {
+        isRecording = false;
+        Microphone.End(deviceName);
+        if (scoreText) scoreText.text = "Süre Doldu!";
+        if (buttonLabel) buttonLabel.text = "-";
+    }
 
     public class BypassCertificate : CertificateHandler { protected override bool ValidateCertificate(byte[] certificateData) { return true; } }
 
