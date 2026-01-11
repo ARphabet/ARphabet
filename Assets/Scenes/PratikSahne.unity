@@ -2736,7 +2736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 690c40e332d56204dbeedd0c5f7ed4e4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VoiceManager
-  geminiApiKey: AIzaSyB34NR4F4VFSaA8k6CwwkDNSKDhm_pYYXQ
+  geminiApiKey: AIzaSyBg5NlfyS-VEO6TALnQFoPQneHKZb3cOsw
   scoreText: {fileID: 1547216582}
   buttonLabel: {fileID: 0}
   aktifHedefKelime: "Havu\xE7"
@@ -4305,10 +4305,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 407852943}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1080, y: 500}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -100}
+  m_SizeDelta: {x: -80, y: 500}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1547216582
 MonoBehaviour:

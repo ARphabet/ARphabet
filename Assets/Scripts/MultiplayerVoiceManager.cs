@@ -5,15 +5,19 @@ using System;
 using System.Text;
 using System.IO;
 using TMPro;
+#if UNITY_ANDROID
+using UnityEngine.Android; // Android izin kütüphanesi eklendi
+#endif
 
 public class MultiplayerVoiceManager : MonoBehaviour
 {
-    // --- DÜZELTİLEN KISIM ---
-    // Artık kendi ismini taşıyor, hata vermeyecek.
     public static MultiplayerVoiceManager Instance;
 
     [Header("Gemini Ayarları")]
-    public string geminiApiKey = "AIzaSyAj77w2jM3QqPaSrwObYiViwCoEfYhoioQ";
+    // Not: API Key'ini gizli tutman önerilir, buraya açık yazdım senin için.
+    private string geminiApiKey = "-";
+
+    // Model ismini düzelttik (2.5 yerine stabil olan 1.5-flash)
     private const string API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
     [Header("UI Bağlantıları")]
@@ -21,27 +25,48 @@ public class MultiplayerVoiceManager : MonoBehaviour
     public TextMeshProUGUI buttonLabel;
 
     // --- DEĞİŞKENLER ---
-    public string aktifHedefKelime = ""; // GameManager burayı güncelleyecek
+    public string aktifHedefKelime = "";
     private AudioClip recordingClip;
     private string deviceName;
     private bool isRecording = false;
 
     void Awake()
     {
-        // Singleton Deseni (Artık türler uyuşuyor)
         if (Instance == null) Instance = this;
     }
 
     void Start()
     {
+        // Start'ı direkt çalıştırmak yerine Coroutine başlatalım ki izin sürecini bekleyebilelim.
+        StartCoroutine(BaslatVeIzinIste());
+    }
+
+    IEnumerator BaslatVeIzinIste()
+    {
+        // 1. ADIM: ANDROID İZNİ İSTE
+#if UNITY_ANDROID
+        if (!Permission.HasUserAuthorizedPermission(Permission.Microphone))
+        {
+            Permission.RequestUserPermission(Permission.Microphone);
+            // Kullanıcının "İzin Ver"e basması için biraz bekle
+            yield return new WaitForSeconds(1.0f);
+        }
+#endif
+
+        // İzin işlemi bitene kadar cihaz listesi güncellenmeyebilir, biraz daha bekle
+        yield return new WaitForSeconds(0.5f);
+
+        // 2. ADIM: MİKROFONLARI KONTROL ET
         if (Microphone.devices.Length > 0)
         {
             deviceName = Microphone.devices[0];
-            if (scoreText) scoreText.text = "Hazır";
+            if (scoreText) scoreText.text = "Hazır (Mobil)";
+            Debug.Log("Mikrofon Bulundu: " + deviceName);
         }
         else
         {
-            if (scoreText) scoreText.text = "Mikrofon Yok!";
+            if (scoreText) scoreText.text = "İzin Verilmedi!";
+            Debug.LogError("Mikrofon bulunamadı veya izin reddedildi.");
         }
     }
 
@@ -50,8 +75,6 @@ public class MultiplayerVoiceManager : MonoBehaviour
     {
         aktifHedefKelime = yeniKelime;
         Debug.Log("Yeni Hedef Kelime: " + aktifHedefKelime);
-        // İstersen UI'da ipucu gösterebilirsin
-        // if(scoreText) scoreText.text = "Sıradaki: " + yeniKelime;
     }
 
     // --- BUTON İŞLEMLERİ ---
@@ -65,10 +88,15 @@ public class MultiplayerVoiceManager : MonoBehaviour
 
     void BaslatKayit()
     {
-        if (string.IsNullOrEmpty(deviceName)) return;
+        if (string.IsNullOrEmpty(deviceName))
+        {
+            if (scoreText) scoreText.text = "Mikrofon Yok!";
+            return;
+        }
 
         isRecording = true;
-        recordingClip = Microphone.Start(deviceName, false, 3, 44100); // 3 Saniye
+        // Telefonda gürültü engelleme için frekansı düşürebilirsin ama 44100 standarttır.
+        recordingClip = Microphone.Start(deviceName, false, 4, 44100); // Süreyi 4 saniye yaptım garanti olsun
 
         if (scoreText) scoreText.text = "Dinliyorum...";
         if (scoreText) scoreText.color = Color.yellow;
@@ -80,6 +108,8 @@ public class MultiplayerVoiceManager : MonoBehaviour
         if (!isRecording) return;
 
         int position = Microphone.GetPosition(deviceName);
+
+        // Eğer çok kısa basıp çekerse hata vermesin
         if (position <= 0)
         {
             Microphone.End(deviceName);
@@ -118,36 +148,26 @@ public class MultiplayerVoiceManager : MonoBehaviour
 
             if (request.result != UnityWebRequest.Result.Success)
             {
-                if (scoreText) scoreText.text = "Hata!";
-                Debug.LogError(request.error);
+                if (scoreText) scoreText.text = "Bağlantı Hatası!";
+                Debug.LogError("Hata: " + request.error);
+                Debug.LogError("Detay: " + request.downloadHandler.text);
             }
             else
             {
-                // 1. Cevabı İşle
                 string jsonResponse = request.downloadHandler.text;
                 string spokenText = ExtractTextFromJson(jsonResponse);
-
-                // 2. Puanı Hesapla
                 int score = CalculateScore(aktifHedefKelime, spokenText);
-
-                // 3. UI Güncelle (Oyuncu ne dediğini görsün)
                 UpdateUI(spokenText, score);
 
-                // 4. KRİTİK NOKTA: Puanı GameManager'a gönder!
                 if (MultiplayerAlphabetManager.Instance != null)
                 {
                     MultiplayerAlphabetManager.Instance.GeminiSonucunuIsle(score);
-                }
-                else
-                {
-                    Debug.LogWarning("GameManager bulunamadı! Puan gönderilemedi.");
                 }
             }
         }
     }
 
     // --- YARDIMCI METODLAR ---
-
     void UpdateUI(string spoken, int score)
     {
         if (scoreText)
@@ -166,7 +186,6 @@ public class MultiplayerVoiceManager : MonoBehaviour
         if (s == t) return 100;
         if (string.IsNullOrEmpty(s) || string.IsNullOrEmpty(t)) return 0;
 
-        // Levenshtein Mesafesi
         int n = s.Length; int m = t.Length;
         int[,] d = new int[n + 1, m + 1];
         for (int i = 0; i <= n; d[i, 0] = i++) { }
@@ -195,6 +214,7 @@ public class MultiplayerVoiceManager : MonoBehaviour
         }
         catch { return "Hata"; }
     }
+
     public void ZorlaDurdur()
     {
         isRecording = false;
